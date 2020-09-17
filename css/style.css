@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #00bcd4;
+    --accent-color: #f50057;
+    --text-color: #263238;
+    --body-color: #FFFFFF;
+    --main-font: 'roboto';
+    --font-bold: 700;
+    --font-regular: 400;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--body-color);
+    font-family: var(--main-font), Arial;
+    font-weight: var(--font-regular);
+    height: 98%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+main #top {}
+
+h1 {
+    font-weight: var(--font-bold)
+}
+
+input,
+button {
+    border: none;
+    background: none;
+    outline: 0;
+}
+
+button {
+    cursor: pointer
+}
+
+.SearchBox-input::placeholder {
+    /* No es un seudoelemento estandar */
+    color: white;
+    opacity: .6;
+}
+
+
+/* Chrome, Opera ySafari */
+
+.SearchBox-input::-webkit-input-placeholder {
+    color: white;
+}
+
+
+/* Firefox 19+ */
+
+.SearchBox-input::-moz-placeholder {
+    color: white;
+}
+
+
+/* IE 10+ y Edge */
+
+.SearchBox-input:-ms-input-placeholder {
+    color: white;
+}
+
+
+/* Firefox 18- */
+
+#formGroupExampleInput:-moz-placeholder {
+    color: white;
+}
+
+.SearchBox {
+    --height: 4em;
+    --dey: 3.34em;
+    display: flex;
+    border-radius: var(--height);
+    background-color: var(--primary-color);
+    height: var(--dey);
+}
+
+.SearchBox-input {
+    width: 700px;
+    padding-left: 2em;
+    padding-right: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    transition: .45s;
+}
+
+.SearchBox-button {
+    display: flex;
+    border-radius: 50%;
+    width: var(--height);
+    height: var(--height);
+    background-color: var(--accent-color);
+    transition: .3s;
+}
+
+.SearchBox-button:active {
+    transform: scale(.85);
+}
+
+.SearchBox-icon {
+    margin: auto;
+    color: #fff;
+}
+
+#searchResult {
+    width: 700px;
+}
+
+em {
+    color: darkslategrey;
+    font-size: 0.8em;
+    font-family: Comic;
+}
+
+
+/****cloud tags*****************************/
+
+#cloud {
+    cursor: pointer;
+}
+
+.tagcloud {
+    width: 700px;
+    height: 300px;
+    background: #CFE3FF;
+    color: #0066FF;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #559DFF;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    overflow: auto;
+}
